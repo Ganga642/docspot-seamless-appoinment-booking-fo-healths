@@ -1,46 +1,93 @@
-# Getting Started with Create React App
+# 🩺 DocSpot – Seamless Appointment Booking for Health
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Category:** Full Stack Development  
+**Skills Required:** HTML, CSS, JavaScript, Bootstrap, React.js, Node.js, MongoDB
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📌 Project Description
 
-### `npm start`
+Booking a doctor's appointment has never been easier. **DocSpot** is a full-stack appointment booking platform that allows patients to book, manage, and track appointments with doctors efficiently. It simplifies the process for customers, doctors, and admins by providing a unified dashboard with real-time availability and appointment status.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This system eliminates the hassle of waiting in queues or calling reception desks and provides a smooth experience for both patients and healthcare professionals.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🎯 Scenario-Based Case Study
 
-### `npm test`
+**👤 Customer :**
+- Registers on the platform as a user.
+- Browses a list of available doctors.
+- Filters based on specialty, location, or time.
+- Selects a doctor and books an appointment by choosing a slot and uploading relevant documents.
+- Gets confirmation once the doctor approves the appointment.
+- Views or manages appointments through the dashboard (reschedule/cancel).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**👨‍⚕️ Doctor :**
+- Registers and awaits admin approval.
+- Manages schedule, appointment status, and follow-ups through a dedicated dashboard.
+- Updates appointment status (scheduled, completed, etc.).
+- Provides visit summaries and follow-up instructions post consultation.
 
-### `npm run build`
+**🛡️ Admin:**
+- Approves new doctor registrations.
+- Oversees platform operations and ensures smooth workflow.
+- Monitors user activity and resolves disputes.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠️ Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| Layer       | Technology                             |
+|-------------|-----------------------------------------|
+| Frontend    | React.js, Axios, Bootstrap, Material UI, Ant Design |
+| Backend     | Node.js, Express.js                    |
+| Database    | MongoDB (Atlas)                        |
+| Auth/Security | JWT, bcryptjs, dotenv, CORS         |
+| Deployment  | Netlify (Frontend), Render (Backend)   |
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 🧠 Technical Architecture
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+DocSpot follows a **client-server architecture**:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- **Frontend (Client):**
+  - Built using React.js with Bootstrap and Material UI for an intuitive and responsive interface.
+  - Uses **Axios** to make HTTP requests to backend APIs.
+  - React Router manages client-side routing for different user roles.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- **Backend (Server):**
+  - Built using **Node.js and Express.js**, structured around MVC pattern.
+  - Handles routing, validation, authentication, and authorization logic.
+  - Connected to MongoDB using **Mongoose** for data modeling and database operations.
 
-## Learn More
+- **Database:**
+  - **MongoDB Atlas** stores data for users, doctors, and appointments.
+  - Follows schema design for scalable and efficient storage.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🧰 Features
+
+### 👤 Users
+- Register & login securely
+- View doctors by specialty, availability, etc.
+- Book & manage appointments
+- Get real-time updates and notifications
+
+### 🧑‍⚕️ Doctors
+- Register and get admin approval
+- Manage availability
+- Accept/reject appointments
+- View patient history and provide follow-ups
+
+### 🛠️ Admin
+- Approve/reject doctor registrations
+- Monitor system operations
+- Manage disputes & compliance
+
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Jangativishnupriya/docspot.git
+cd docspot
